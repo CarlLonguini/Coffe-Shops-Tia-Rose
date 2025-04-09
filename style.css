@@ -1,0 +1,276 @@
+
+/* === RESET GERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f5f2;
+  color: #472c14;
+  line-height: 1.6;
+}
+
+/* === TIPOGRAFIA === */
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #181111;
+}
+
+/* === CONTAINER PADRÃO === */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* === HEADER FIXO === */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4d2711;
+  border-bottom: 10px solid #ffffff;
+  z-index: 999;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3e222f;
+  padding: 10px 0;
+  border-radius: 0 0 8px 8px;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.submenu li {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.submenu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item a:hover {
+  color: #d4a373;
+}
+
+/* === HERO SECTION === */
+.hero {
+  height: 100vh;
+  background: url('https://static.vecteezy.com/ti/vetor-gratis/p1/11332525-fundo-de-conceito-de-cafe-desenhado-a-mao-vetor.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: clamp(24px, 5vw, 48px);
+  color: #fff;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === SEÇÕES === */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.home {
+  background-color: #8a684a;
+}
+
+.light {
+  background-color: #F2E8DF;
+}
+
+.contato {
+  background-color: #b8b8b8fb;
+}
+
+/* === SOBRE NÓS === */
+.sobre-nos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.img-sobre img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.texto-sobre {
+  flex: 1;
+  min-width: 280px;
+  color: #fff;
+}
+
+.texto-sobre h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* === CARDÁPIO === */
+.cardapio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.item-cardapio {
+  text-align: center;
+  max-width: 150px;
+}
+
+.circulo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto;
+  border: 4px solid #a0522d;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.circulo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-cardapio .nome {
+  font-weight: bold;
+  font-size: 16px;
+  color: #261420;
+}
+
+.item-cardapio .preco {
+  color: #a0522d;
+  font-weight: bold;
+}
+
+.light h1 {
+  color: #261420;
+  font-size: 50px;
+}
+
+/* === FORMULÁRIO === */
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #b8b8b8fb;
+}
+
+form button {
+  background-color: #a0522d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #9e9d9dfb;
+  color: #2e2e2e;
+  text-align: center;
+  padding: 1px 0;
+  font-size: 10px;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    background-color: #261420;
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}

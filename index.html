@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shops Tia Rosa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Coffee Tia Rosa</h1>
+        <nav>
+          <ul>
+            <li class="menu-item">
+              <a href="#home">Início</a>
+              <ul class="submenu">
+                <li><a href="#home">Bem-vindo</a></li>
+                <li><a href="#sobre">Quem somos</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#cardapio">Cardápio</a>
+              <ul class="submenu">
+                <li><a href="#cardapio">Cafés</a></li>
+                <li><a href="#cardapio">Lanches</a></li>
+                <li><a href="#cardapio">Bolos</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#contato">Contato</a>
+              <ul class="submenu">
+                <li><a href="#contato">Formulário</a></li>
+                <li><a href="#contato">Redes sociais</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>O café que acolhe</h2>
+        <p>Sinta o aroma, prove a tradição.</p>
+        <button onclick="mostrarMensagem()">Conheça mais</button>
+      </div>
+    </section>
+
+    <section id="sobre" class="section home">
+      <div class="container sobre-nos">
+        <div class="img-sobre">
+          <img src="https://i.pinimg.com/736x/f3/be/c5/f3bec57c989ad2b7b6f62f0695ffe73a.jpg" alt="Lugar">
+        </div>
+        <div class="texto-sobre">
+          <h2>Sobre nós</h2>
+          <p>
+            Fundado com carinho, o Coffee Tia Rosa oferece um ambiente familiar e acolhedor <br>
+            onde cada xícara de café é servida com amor e dedicação. <br>
+            Desde 2010 somos referência em qualidade e atendimento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio" class="section light">
+      <div class="container">
+        <h1>Nosso Cardápio</h1>
+        <div class="cardapio-grid">
+          <div class="item-cardapio">
+            <p class="nome">Café Expresso</p>
+            <div class="circulo-img">
+              <img src="https://loucodocafe.com.br/wp-content/uploads/2019/09/cafe-expresso-02-e1568084083582-810x456.jpg" alt="Café Expresso">
+            </div>
+            <p class="preco">R$ 5,00</p>
+          </div>
+
+          <div class="item-cardapio">
+            <p class="nome">Cappuccino</p>
+            <div class="circulo-img">
+              <img src="https://perfectdailygrind.com/wp-content/uploads/2019/11/Cappuccino-1.png" alt="Cappuccino">
+            </div>
+            <p class="preco">R$ 7,50</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contato">
+      <div class="container">
+        <h2>Fale Conosco</h2>
+        <p>Endereço: Rua do Café, 123 – Centro<br>
+        WhatsApp: (11) 91234-5678<br>
+        Instagram: @tia.rosa.coffee</p>
+
+        <form>
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+          <textarea placeholder="Sua mensagem..." required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Coffee Tia Rosa. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
